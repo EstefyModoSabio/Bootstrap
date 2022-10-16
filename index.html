@@ -1,132 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-
-    <title>Retos Grilla Bootstrap</title>
-
-    <style>
-      .col {
-        border: 1px solid white;
-        height: 70px;
-      }
-
-      .reto1 .col {
-        background-color: lightseagreen;
-      }
-
-      .reto2 .col {
-        background-color: lightcoral;
-      }
-
-      .reto3 .col{
-        background-color: red;
-      }
-    </style>
+    <link rel="stylesheet" href="./index.css" />
+    <title>Platzi Hawai Conf</title>
   </head>
-
   <body>
-    <br />
-    <br />
-    <div class="container reto1">
-      <h2>Reto 1</h2>
-      <div class="row">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-      </div>
+    <!-- Header con NavBar utlizando Bootstrap -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="header">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/pics/platzi-logo.png" alt="Platzi Logo" />Conf
+            Hawaii
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >La conferencia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Los Oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >El lugar y la fecha</a
+                >
+              </li>
 
-      <div class="row">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-      </div>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Conviertete en orador</a
+                >
+              </li>
 
-      <div class="row">
-        <div class="col"></div>
-        <div class="col"></div>
-      </div>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-platzi"
+                  aria-current="page"
+                  href="#"
+                  >Comprar tickets</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Cierre del Header -->
+    <!-- Section carrusel utilizando Bootstrap -->
 
-      <div class="row">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-      </div>
-
-      <div class="row">
-        <div class="col"></div>
-      </div>
-    </div>
-    <br />
-    <br />
-    <br />
-
-    <div class="container reto2">
-      <h2>Reto 2</h2>
-      <div class="row">
-        <div class="col col-md-3 col-sm-6 col-6">Col1</div>
-        <div class="col col-md-3 col-sm-6 col-6">Col2</div>
-        <div class="col col-md-3 col-sm-6 col-6">Col3</div>
-        <div class="col col-md-3 col-sm-6 col-6">Col4</div>
-      </div>
-      <div class="row">
-        <div class="col col-md-6 col-sm-12 col-12 col-lg"></div>
-        <div class="col col-md-6 col-sm-12 col-12 col-lg"></div>
-        <div class="col col-md-6 col-sm-12 col-12 col-lg"></div>
-        <div class="col col-md-6 col-sm-12 col-12 col-lg"></div>
-        <div class="col col-md-6 col-sm-12 col-12 col-lg"></div>
-        <div class="col col-md-6 col-sm-12 col-12 col-lg"></div>
-        <div class="col col-md-6 col-sm-12 col-12 col-lg"></div>
-        <div class="col col-md-6 col-sm-12 col-12 col-lg"></div>
-        <div class="col col-md-6 col-sm-12 col-12 col-lg"></div>
-        <div class="col col-md-6 col-sm-12 col-12 col-lg"></div>
-      </div>
-    </div>
-<br>
-<br>
-<br>
-
-    <div class="container reto3">
-        <h2>Reto 3</h2>
-      <div class="row">
-        <div class="col col-lg-6 col-12 offset-lg-6">
-            col 1
-        </div>  
-      </div>
-      <div class="row">
-        <div class="col col-8 offset-md-2">
-            col 2
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel" data-bs-interval="false" 
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/pics/hawaii.jpg" class="d-block w-100" alt="Hawaii 1" />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/pics/hawaii2.jpg"
+            class="d-block w-100"
+            alt="Hawaii 2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/pics/hawaii3.jpeg"
+            class="d-block w-100"
+            alt="Hawaii 3"
+          />
         </div>
       </div>
-      <div class="row">
-        <div class="col  col-3  offset-9 offset-md-0">
-            col 3
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Cierre del carrusel -->
+
+    <!-- Footer utilizando Boostrap p/ el desarrollo responsive -->
+    <footer id="footer" class="py-4 pt-4">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 col-lg">
+            <a href="#">Preguntas frecuentes</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Contactanos</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Prensa</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Terminos y condiciones</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Privacidad</a>
+          </div>
+          <div class="col-12 col-lg">
+            <a href="#">Estudiantes</a>
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
+    <!-- Cierre del Footer -->
+
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    
   </body>
 </html>
